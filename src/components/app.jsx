@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 
 import FlatList from './flat_list.jsx'
+import flats from '../../data/flats.js'
+
 
 class App extends Component {
 
@@ -9,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <div className="flat-list">
-          <FlatList />
+          <FlatList flats={flats} />
         </div>
         <div className="map-container">
 
