@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import Flat from './flat.jsx'
+import Flat from './flat.jsx';
 
 class FlatList extends Component {
-
   renderList = () => {
     return (
       this.props.flats.map((flat) => {
@@ -19,19 +18,19 @@ class FlatList extends Component {
             selected={flat.lat === this.props.selectedLat}
             selectFlat={this.props.selectFlat}
           />
-        )
+        );
       })
-    )
+    );
   }
 
   render() {
     return (
-      <div className='flat-list'>
+      <div className="flat-list">
         {this.renderList()}
       </div>
-    )
-  };
-};
+    );
+  }
+}
 
 
-export default FlatList
+export default FlatList;
