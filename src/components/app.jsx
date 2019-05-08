@@ -10,11 +10,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="flat-list">
-          <FlatList flats={flats} />
-        </div>
+        <FlatList flats={flats} />
         <div className="map-container">
-
         </div>
       </div>
     );
