@@ -9,13 +9,14 @@ class FlatList extends Component {
       this.props.flats.map((flat) => {
         return (
           <Flat
-            key={flat.name}
+            key={flat.lat}
             description={flat.name}
             price={flat.price}
             lat={flat.lat}
             lng={flat.lng}
             priceCurrency={flat.priceCurrency}
             image={flat.imageUrl}
+            selected={flat.lat === this.props.selectedLat}
             selectFlat={this.props.selectFlat}
           />
         )
