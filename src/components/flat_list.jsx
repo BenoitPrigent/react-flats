@@ -13,8 +13,10 @@ class FlatList extends Component {
             description={flat.name}
             price={flat.price}
             lat={flat.lat}
+            lng={flat.lng}
             priceCurrency={flat.priceCurrency}
             image={flat.imageUrl}
+            selectFlat={this.props.selectFlat}
           />
         )
       })

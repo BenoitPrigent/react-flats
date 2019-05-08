@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Marker extends Component {
 
   render() {
-    return null
+    return <div className="marker"> </div>
   }
 };
 
